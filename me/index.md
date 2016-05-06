@@ -2,13 +2,15 @@
 layout: about
 ---
 
-Hello, my name is Micah Cowell. I am a self proclaimed web developer who likes the internet, hip hop, and fancy yo-yos.
+Name: aazhanglei-42 
+gender: Male 
+Birthday:8/19/2015, 1:50 PM 
+Description: Lei Zhang's personal blog. 
+Contents: life, the universe and everything.
 
-# What do you do?
-I make website and stuff. All the code I write is on my [Github](https://github.com/getmicah).
+Life, the universe, and everything.
+前两天在网上浏览到.xyz的域名，觉得很有意思就下意识的搜索了一下leizhang.xyz。本以为这个域名会被中国30万张磊同胞抢注，结果并没有。我就注册了。
 
-# Who are your favorite artsits?
-Currently I'm listening to a lot of Anderson Paak and Common.
+这个博客的读者是我自己，内容目前来看应该会写写故事，记录想法，像日记一样。主题来自我非常喜欢的科幻小说《银河系漫游指南》，"the answer to life, the universe, and everything.“ 更新周期会是在我看完一本书后更新一篇，所以每一篇会在末尾附上书的简评。
 
-# What programming languages do you use?
-When making websites I like using Javascript and Sass but I also like Python and bash for making linux scripts.
+这里欢迎每一位！
