@@ -3,7 +3,7 @@ title: We Are Explorers
 layout: post
 ---
 
-Overvalue ones’ self can bring him self-destruction easily, I told myself lately. Things almost never went south when people are paying attention. So it is easier to recovery from dust than rise up from glory. 
+Overvalue oneself can bring him self-destruction easily, I told myself lately. Things almost never went south when people are paying attention. So it is easier to recovery from dust than rise up from glory. 
 
 I was looking for a purpose to live, and of course I knew the answer is not necessarily rational or even real. Along the path, I might get the false impression of finally getting one but it turns out to be wrong after time. I have over ninety percent confidence that I have found it this time: Space. 
 
