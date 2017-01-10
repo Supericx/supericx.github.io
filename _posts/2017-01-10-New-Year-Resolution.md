@@ -1,7 +1,7 @@
 
 ---
-Title: New Year Resolution
 Layout: post
+Title: New Year Resolution
 ---
 
 Based on the date of this resolution, i guess the first on the list should be eliminating procrastination. 
