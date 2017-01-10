@@ -1,4 +1,3 @@
-
 ---
 Layout: post
 Title: New Year Resolution
