@@ -3,7 +3,7 @@ layout: post
 title: Hackintosh@macOS 10.12.3 with RX 480
 ---
 
-Credit: 
+Credit:   
 "conath"@ tonymacx86.com  
 "Rehabman"@ tonymacx86.com  
 
