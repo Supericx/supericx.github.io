@@ -58,6 +58,8 @@ J) 把之前生成的serial number复制到Board Serial Number 然后加五个�
 
 K）保存，重启，关机。（我的iMessage在这一步就已经可以用了，如果你的不行， 可以看tonymacx上的Fix iMessage）
 
+---
+
 # 2. 安装RX 480
 
 A）进入 /System/Library/Extensions/ 把AMDRadeonX4100复制到桌面，右键open contents打开Info.plist然后找到<key>IOPCIMatch</key>这一行。把“0x67DF1002“添加到<stirng>里。保存
@@ -163,6 +165,8 @@ B）把RX480插到第一个PCIE（有反应插在第二个接口不行的），�
 
 要等很久是因为启动的时候用的是核显，所以显示器连在RX480上不会输出任何信号，需要等到进入macOS后才能显示。
 
+---
+
 # 3. 优化hackintosh
 上面这两步基本都是按照conath的步骤来的， 中间根据我的硬件修改了一些过程，但是似乎现在只能用这种办法来加速RX480，我写的也比较简单，大家可以看conath的原帖。
 后面是我加上去的一些优化和出现的问题的解决方法。
@@ -195,12 +199,16 @@ F) 睡眠后不能用chrome和看youtube，facetime也有问题
 
 不要手动睡眠。如果非要手动睡眠，把chrome的setting里use hardware acceleration 关了就可以用chrome了。还没找到这个问题完美的解决方案。
 
+---
+
 # 4. 双系统
 
 为了玩overwatch，我必须要装一个windows。所以又买了块SSD然后装了windows。发现每次启动需要把HDMI线拔了换到主板上然后进入bios启动windows再换回显卡上非常麻烦。所以找到了如下解决方案：
 HDMI switch
 可以用遥控器控制主板还是显卡的HDMI输入，这样每次换windows的时候就方便多了。
 我用的是IOGEAR的HDMI switch，很好用。
+
+---
 
 # 5. 储存盘分区
 
