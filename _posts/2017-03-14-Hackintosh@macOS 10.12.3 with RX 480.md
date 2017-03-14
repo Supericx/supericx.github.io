@@ -84,10 +84,11 @@ C）打开Clover Configurator - Graphics
 * 和"\System\Library\Extensions\AMD9500COntroller.kext"
 * 把这一段code加到config.plist的KextsToPatch里(credits to @Mork_vom_Ork)
 * 像这样：
-* <key>KextsToPatch</key>
-* <array>
-* 加到这里！！！
-* </array>
+````<key>KextsToPatch</key>
+<array>
+加到这里！！！
+</array>
+````
 
 ````Code: 
 <dict>
