@@ -8,8 +8,7 @@ Credit:
 "Rehabman"@ tonymacx86.com  
 
 本身黑苹果选好硬件安装大体不难，主要还是不通的硬件之间需要一些调整来解决一些小问题。目前我的配置大概如下：
-主板：  
-Gigabyte Z170XP-SLI  
+主板：Gigabyte Z170XP-SLI  
 CPU: i7-6700k  
 显卡: XFX RX 480  
 
