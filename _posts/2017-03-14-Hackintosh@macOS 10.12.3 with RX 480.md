@@ -8,7 +8,8 @@ Credit:
 "Rehabman"@ tonymacx86.com  
 
 本身黑苹果选好硬件安装大体不难，主要还是不通的硬件之间需要一些调整来解决一些小问题。目前我的配置大概如下：
-主板：Gigabyte Z170XP-SLI  
+主板：  
+Gigabyte Z170XP-SLI  
 CPU: i7-6700k  
 显卡: XFX RX 480  
 
@@ -21,7 +22,9 @@ CPU: i7-6700k
 ![disk](/assets/img/disk_info.png)
 
 本文主要是记载下怎么给rx480加速（macOS里现在还没有相应的驱动，据说10.12.4也没有，不清楚今年WWDC的10.12.4会不会支持），怎么在windows和mac之间切换以及后期遇到的一些问题提怎么解决。至于安装hackintosh会稍微简略一些。
+
 ---
+
 # 1. 安装10.12.3
 
 A）选好硬件
