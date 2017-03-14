@@ -25,9 +25,13 @@ CPU: i7-6700k
 ## 1. 安装10.12.3
 
 A）选好硬件
+
 B）装好PC（此时先别安装RX480，用cpu里的核显）
+
 C）用unibeast制作安装盘+把multibeast放到USB里
+
 D）开机，用unibeast装好macOS幷通过mutibeast安装驱动
+
 这里在mutibeast里我选的是这些：
 UEFI Boot mode
 Audio - Realtek ALCXXX - ALC1150 + Option 3 Port(5.1) Audio
@@ -37,19 +41,29 @@ Network - IntelMausiEthernet v2.2.0
 USB - All
 Customize - Graphics Configuration - HD 530
 Customize - System Definition - iMac 17,1
+
 E)这个时候，这台hackintosh应该能正常启动，上网。但是声音可能会有点问题，屏幕左上角会闪，以及还有很多其他的小问题。
+
 F) 下载Clover Configurator, mount EFI, 用clover configurator 打开config.plist
+
 G) 去SMBIOS, 点魔法棒，选择iMac 17,1 - 点shake，然后复制生成的serial number。
+
 H) www.checkcoverage.apple.com，搜索刚生成的号码，如果显示错误，那么就可以用。
+
 I) 打开terminal，然后输入 uuidgen ，把UUID复制到Clover Configurator SMBIOS里的SmUUID。
+
 J) 把之前生成的serial number复制到Board Serial Number 然后加五个随机的HEX数字（0-9，A-F）
+
 K）保存，重启，关机。（我的iMessage在这一步就已经可以用了，如果你的不行， 可以看tonymacx上的Fix iMessage）
 
 ## 2. 安装RX 480
 
 A）进入 /System/Library/Extensions/ 把AMDRadeonX4100复制到桌面，右键open contents打开Info.plist然后找到<key>IOPCIMatch</key>这一行。把“0x67DF1002“添加到<stirng>里。保存
+
 B）把桌面的这个修改过的AMDRadeonX00.kext放到KextUtility.app（需要下载）来安装。
+
 C）打开Clover Configurator - Graphics 
+
 点Inject EDID = on, 
 FB Name = Dayman, 
 ig-platform-id = 0x1912, 
@@ -145,34 +159,50 @@ WCA0ODAAAAAAAAAAAAAAAA==
 
 保存，关机，开机。
 进入BIOS选择核显启动（非常重要）
+
 B）把RX480插到第一个PCIE（有反应插在第二个接口不行的），然后把显示器的线接到RX480上。开机，等很久，然后应该就可以了。
+
 要等很久是因为启动的时候用的是核显，所以显示器连在RX480上不会输出任何信号，需要等到进入macOS后才能显示。
+
 ## 3. 优化hackintosh
 上面这两步基本都是按照conath的步骤来的， 中间根据我的硬件修改了一些过程，但是似乎现在只能用这种办法来加速RX480，我写的也比较简单，大家可以看conath的原帖。
 后面是我加上去的一些优化和出现的问题的解决方法。
+
 A) 我发现的第一个问题是音响接后面版的line out没有声音。
+
 首先可以试试更改一下mutibeast里面audio的驱动如果不能解决。按照这个帖子：
 
 https://www.tonymacx86.com/threads/no-audio-devices-realtek-alc-applehda-guide.143752/
 
 B）Facetime摄像头
+
 我买了个logitech C615,可用。一些其他型号应该也可以。
+
 C) handoff and continuity
+
 需要买macbook或者imac上的蓝牙模块加转换头，我买的是BCM94360CD和一个adapter，亚马逊和ebay都能买到。装上去之后可以跑一下github上的一个开源软件叫Continuity Activation Tool。我的一开始不行，等了半天之后就可以了。现在唯一不行的就是Unlock with Apple Watch。这个选项可以选但是login的时候没有自动解锁。
+
 D)Final Cut Pro
+
 最新版用不了（不支持RX 480，等更新），但是10.2.3可以用。
+
 E) Power Management
+
 https://www.tonymacx86.com/threads/quick-guide-to-generate-a-ssdt-for-cpu-power-management.177456/
 
 到这里如果你只用macOS基本小问题都能解决了。可以算是一台完美的黑苹果直到下一次系统更新。
+
 F) 睡眠后不能用chrome和看youtube，facetime也有问题
+
 不要手动睡眠。如果非要手动睡眠，把chrome的setting里use hardware acceleration 关了就可以用chrome了。还没找到这个问题完美的解决方案。
 ## 4. 双系统
 为了玩overwatch，我必须要装一个windows。所以又买了块SSD然后装了windows。发现每次启动需要把HDMI线拔了换到主板上然后进入bios启动windows再换回显卡上非常麻烦。所以找到了如下解决方案：
 HDMI switch
 可以用遥控器控制主板还是显卡的HDMI输入，这样每次换windows的时候就方便多了。
 我用的是IOGEAR的HDMI switch，很好用。
-5. 储存盘分区
+
+## 5. 储存盘分区
+
 因为macOS下用的是HFS+, windows用NTFS，所以如果想Mac和windows共用一个分区需要在windows下安装HFS+的程序或者反过来在Mac下安装NTFS的程序。但是我不需要共用所以现在macOS里分区，把windows要用的分成FAT，然后再在windows下erase成NTFS就可以了。
 
 
