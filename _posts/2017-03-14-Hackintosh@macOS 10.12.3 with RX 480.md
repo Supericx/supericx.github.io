@@ -32,17 +32,17 @@ C）用unibeast制作安装盘+把multibeast放到USB里
 
 D）开机，用unibeast装好macOS幷通过mutibeast安装驱动
 
-这里在mutibeast里我选的是这些：
-UEFI Boot mode
-Audio - Realtek ALCXXX - ALC1150 + Option 3 Port(5.1) Audio
-Disk - AHCI
-Miassets/scgaopenCL.png.21
-Network - IntelMausiEthernet v2.2.0
-USB - All
-Customize - Graphics Configuration - HD 530
-Customize - System Definition - iMac 17,1
+* 这里在mutibeast里我选的是这些：
+* UEFI Boot mode
+* Audio - Realtek ALCXXX - ALC1150 + Option 3 Port(5.1) Audio
+* Disk - AHCI
+* Miassets/scgaopenCL.png.21
+* Network - IntelMausiEthernet v2.2.0
+* USB - All
+* Customize - Graphics Configuration - HD 530
+* Customize - System Definition - iMac 17,1
 
-E)这个时候，这台hackintosh应该能正常启动，上网。但是声音可能会有点问题，屏幕左上角会闪，以及还有很多其他的小问题。
+E) 这个时候，这台hackintosh应该能正常启动，上网。但是声音可能会有点问题，屏幕左上角会闪，以及还有很多其他的小问题。
 
 F) 下载Clover Configurator, mount EFI, 用clover configurator 打开config.plist
 
