@@ -22,7 +22,7 @@ CPU: i7-6700k
 
 本文主要是记载下怎么给rx480加速（macOS里现在还没有相应的驱动，据说10.12.4也没有，不清楚今年WWDC的10.12.4会不会支持），怎么在windows和mac之间切换以及后期遇到的一些问题提怎么解决。至于安装hackintosh会稍微简略一些。
 
-##1. 安装10.12.3
+## 1. 安装10.12.3
 
 A）选好硬件
 B）装好PC（此时先别安装RX480，用cpu里的核显）
@@ -45,7 +45,7 @@ I) 打开terminal，然后输入 uuidgen ，把UUID复制到Clover Configurator 
 J) 把之前生成的serial number复制到Board Serial Number 然后加五个随机的HEX数字（0-9，A-F）
 K）保存，重启，关机。（我的iMessage在这一步就已经可以用了，如果你的不行， 可以看tonymacx上的Fix iMessage）
 
-##2. 安装RX 480
+## 2. 安装RX 480
 
 A）进入 /System/Library/Extensions/ 把AMDRadeonX4100复制到桌面，右键open contents打开Info.plist然后找到<key>IOPCIMatch</key>这一行。把“0x67DF1002“添加到<stirng>里。保存
 B）把桌面的这个修改过的AMDRadeonX00.kext放到KextUtility.app（需要下载）来安装。
@@ -147,7 +147,7 @@ WCA0ODAAAAAAAAAAAAAAAA==
 进入BIOS选择核显启动（非常重要）
 B）把RX480插到第一个PCIE（有反应插在第二个接口不行的），然后把显示器的线接到RX480上。开机，等很久，然后应该就可以了。
 要等很久是因为启动的时候用的是核显，所以显示器连在RX480上不会输出任何信号，需要等到进入macOS后才能显示。
-##3. 优化hackintosh
+## 3. 优化hackintosh
 上面这两步基本都是按照conath的步骤来的， 中间根据我的硬件修改了一些过程，但是似乎现在只能用这种办法来加速RX480，我写的也比较简单，大家可以看conath的原帖。
 后面是我加上去的一些优化和出现的问题的解决方法。
 A) 我发现的第一个问题是音响接后面版的line out没有声音。
@@ -167,7 +167,7 @@ https://www.tonymacx86.com/threads/quick-guide-to-generate-a-ssdt-for-cpu-power-
 到这里如果你只用macOS基本小问题都能解决了。可以算是一台完美的黑苹果直到下一次系统更新。
 F) 睡眠后不能用chrome和看youtube，facetime也有问题
 不要手动睡眠。如果非要手动睡眠，把chrome的setting里use hardware acceleration 关了就可以用chrome了。还没找到这个问题完美的解决方案。
-##4. 双系统
+## 4. 双系统
 为了玩overwatch，我必须要装一个windows。所以又买了块SSD然后装了windows。发现每次启动需要把HDMI线拔了换到主板上然后进入bios启动windows再换回显卡上非常麻烦。所以找到了如下解决方案：
 HDMI switch
 可以用遥控器控制主板还是显卡的HDMI输入，这样每次换windows的时候就方便多了。
