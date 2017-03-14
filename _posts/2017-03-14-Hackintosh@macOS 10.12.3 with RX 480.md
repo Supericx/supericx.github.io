@@ -64,32 +64,32 @@ B）把桌面的这个修改过的AMDRadeonX00.kext放到KextUtility.app（需�
 
 C）打开Clover Configurator - Graphics 
 
-点Inject EDID = on, 
-FB Name = Dayman, 
-ig-platform-id = 0x1912, 
-Load VBios = off,
-Patch Bios = on,
-Inject Intel = off,
-Inject ATI = on,
-进入ACPI
-Fix Display = on
-进到Devices
-Fake ID - ATI - 0x67DF1002
-进到Boot
-Darkwake = 8,
-Timeout = 2,
-Default Boot Volume = 写你自己的macOS的硬盘的名字
-进到Kernel and Kext Patches -ForceKextsToLoad
-加一个 “\System\Library\Extensions\AMDRadeonX4100.kext"
-和 "\System\Library\Extensions\AMD9500COntroller.kext"
-把这一段code加到config.plist的KextsToPatch里(credits to @Mork_vom_Ork)
-像这样：
-<key>KextsToPatch</key>
-<array>
-加到这里！！！
-</array>
+*点Inject EDID = on, 
+*FB Name = Dayman, 
+*ig-platform-id = 0x1912, 
+*Load VBios = off,
+*Patch Bios = on,
+*Inject Intel = off,
+*Inject ATI = on,
+*进入ACPI
+*Fix Display = on
+*进到Devices
+*Fake ID - ATI - 0x67DF1002
+*进到Boot
+*Darkwake = 8,
+*Timeout = 2,
+*Default Boot Volume = 写你自己的macOS的硬盘的名字
+*进到Kernel and Kext Patches -ForceKextsToLoad
+*加一个 “\System\Library\Extensions\AMDRadeonX4100.kext"
+*和 "\System\Library\Extensions\AMD9500COntroller.kext"
+*把这一段code加到config.plist的KextsToPatch里(credits to @Mork_vom_Ork)
+*像这样：
+*<key>KextsToPatch</key>
+*<array>
+*加到这里！！！
+*</array>
 
-Code: 
+````Code: 
 <dict>
 <key>Comment</key>
 <string>Change_#_of_RX4x0_CUs-(C)_by_okrasit_2016</string>
@@ -156,6 +156,7 @@ OSB4eHgAQVRZLFBhcnQjAA==
 WCA0ODAAAAAAAAAAAAAAAA==
 </data>
 </dict>
+````
 
 保存，关机，开机。
 进入BIOS选择核显启动（非常重要）
