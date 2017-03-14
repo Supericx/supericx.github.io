@@ -84,8 +84,8 @@ C）打开Clover Configurator - Graphics
 * 和"\System\Library\Extensions\AMD9500COntroller.kext"
 * 把这一段code加到config.plist的KextsToPatch里(credits to @Mork_vom_Ork)
 
-
-````Code: 
+Code: 
+````
 <dict>
 <key>Comment</key>
 <string>Change_#_of_RX4x0_CUs-(C)_by_okrasit_2016</string>
