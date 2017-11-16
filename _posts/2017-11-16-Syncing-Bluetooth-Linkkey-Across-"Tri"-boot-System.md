@@ -10,7 +10,7 @@ insanelymac.com
 
 下一个问题就是我的蓝牙键盘每次切换系统的时候需要重新配对。之前只有windows + macOS的时候问题不大，minila air可以同时配对，但是不知道为什么配对到linux后就不行了。所以想换一个解决方法。
 
-#方法如下：
+# 方法如下：
 1. Unpair to all three OS.
 2. Pair the keyboard in the following order: ubuntu(linux), windows, macOS.
 3. Boot into macOS, open terminal and run:
