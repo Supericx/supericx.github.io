@@ -11,5 +11,3 @@ Maybe I should talk more about games. Games has exists for quite awhile (you goo
 
 Things are changing, like they always have been. Abstraction simplifies the complex relationships between fundamentals, makes them look perfect. This way of thinking makes the evaluation of changes and predicting the changes easier. I heavily rely on this way of thinking, but today i come to question it. Things work out in digital does not mean they will do the same in analog. Details get lost here and there when those abstractions were made. So maybe messes are good, and down to the earth is crucial.
 
-
-
