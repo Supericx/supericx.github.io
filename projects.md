@@ -3,7 +3,7 @@ layout: default
 title: Projects
 ---
 
-<a href="/">&lt;-- back</a>
+[<-- back](/)
 
 # My Projects
 
