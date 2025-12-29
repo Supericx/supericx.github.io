@@ -6,8 +6,15 @@ $color-link: #1A0DAB;
 $color-code: #00FF00;
 
 // FONT
-$font-url: "https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic";
-$font-family: "'Ubuntu Mono', ";
+$font-url: "https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap";
+$font-family: 'Inconsolata', 'Monaco', 'Consolas', 'Courier New', monospace;
+
+// TYPOGRAPHY SCALE
+$font-base: 1rem;
+$font-scale: 1.25;
+$line-height-base: 1.6;
+$line-height-heading: 1.3;
+$line-height-tight: 1.4;
 
 // BREAKPOINTS
 $br: 600px;
