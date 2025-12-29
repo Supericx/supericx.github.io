@@ -3,7 +3,7 @@ layout: default
 title: Projects
 ---
 
-{% include header.html %}
+<a href="/">&lt;-- back</a>
 
 # My Projects
 
