@@ -3,6 +3,8 @@ layout: default
 title: Projects
 ---
 
+{% include header.html %}
+
 # My Projects
 
 ## Featured Projects
