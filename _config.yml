@@ -1,12 +1,22 @@
 # My variables
 name: Lei Zhang
-description: 42
+description: Personal blog and portfolio of Lei Zhang
+url: https://www.leizhang.ai
 google_verification: null
+
+
+# Plugins
+plugins:
+  - jekyll-sitemap
+
+
+# Permalinks
+permalink: /:title/
 
 
 # File management
 include: [".htaccess"]
-exclude: ["README.md", "LICENSE", "_posts/archive"]
+exclude: ["README.md", "LICENSE", "_posts/archive", "Gemfile", "Gemfile.lock"]
 
 
 # Sass

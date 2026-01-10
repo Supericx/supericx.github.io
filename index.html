@@ -1,28 +1,26 @@
 ---
 layout: default
 ---
+{%- include header.html -%}
 
-{% include header.html %}
-
-<div class="portfolio">
-    <h1>Current Project:</h1>
+<section class="portfolio">
+    <h2>Current Project:</h2>
     <ul>
-        {% for websites in site.data.websites %}
+        {%- for websites in site.data.websites -%}
         <li>
             <a href="{{ websites.url }}">{{ websites.name }}</a>
         </li>
-        {% endfor %}
+        {%- endfor -%}
     </ul>
-</div>
+</section>
 
-
-<div class="blog">
-    <h1>Blog Posts:</h1>
+<section class="blog">
+    <h2>Blog Posts:</h2>
     <ul>
-        {% for post in site.posts %}
+        {%- for post in site.posts -%}
         <li>
-            <span class="date">{{ post.date | date: '%Y %b %d' }}</span> - <a href="{{ post.url }}">{{ post.title }}</a>
+            <span class="date">{{ post.date | date: '%B %-d, %Y' }}</span> - <a href="{{ post.url }}">{{ post.title }}</a>
         </li>
-        {% endfor %}
+        {%- endfor -%}
     </ul>
-</div>
+</section>

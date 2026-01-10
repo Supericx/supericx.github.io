@@ -1,3 +1,5 @@
 source 'https://rubygems.org'
-gem 'jekyll'
+
+gem 'jekyll', '~> 4.3'
 gem 'jekyll-sitemap'
+gem 'webrick' # Required for Ruby 3.0+

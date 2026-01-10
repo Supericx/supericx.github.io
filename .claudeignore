@@ -1,0 +1,15 @@
+# Build output
+_site/
+.jekyll-cache/
+.sass-cache/
+
+# Dependencies
+vendor/
+.bundle/
+
+# System files
+.DS_Store
+.git/
+
+# Archived content
+_posts/archive/

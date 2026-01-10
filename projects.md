@@ -2,60 +2,45 @@
 layout: default
 title: Projects
 ---
+{%- include header.html -%}
 
-[<-- back](/)
+<article class="projects">
+    {%- include back-link.html -%}
+    <h2 class="projects__title">My Projects</h2>
 
-# My Projects
+    <section class="projects__section">
+        <h3>Featured Projects</h3>
+        {%- for project in site.data.projects.featured -%}
+        <div class="project-card">
+            <h4>{{ project.name }}</h4>
+            <p>{{ project.description }}</p>
+            <p><strong>Tech Stack:</strong> {{ project.tech }}</p>
+            <p><strong>Status:</strong> {{ project.status }}</p>
+            <p><strong>Key Features:</strong></p>
+            <ul>
+                {%- for feature in project.features -%}
+                <li>{{ feature }}</li>
+                {%- endfor -%}
+            </ul>
+        </div>
+        {%- endfor -%}
+    </section>
 
-## Featured Projects
+    <section class="projects__section">
+        <h3>Open Source Contributions</h3>
+        <ul>
+            {%- for contrib in site.data.projects.open_source -%}
+            <li><strong>{{ contrib.name }}</strong> - {{ contrib.contribution }}</li>
+            {%- endfor -%}
+        </ul>
+    </section>
 
-### AI-Powered Code Assistant
-A sophisticated code analysis tool that leverages machine learning to provide intelligent suggestions and automated refactoring capabilities. Built with Python and TensorFlow.
-
-**Tech Stack:** Python, TensorFlow, Flask, React
-**Status:** Active Development
-**Key Features:**
-- Real-time code analysis
-- Smart refactoring suggestions
-- Integration with popular IDEs
-- Custom rule engine
-
----
-
-### Distributed Task Scheduler
-A scalable, fault-tolerant task scheduling system designed for microservices architectures. Handles millions of tasks per day with sub-second latency.
-
-**Tech Stack:** Go, Redis, PostgreSQL, Kubernetes
-**Status:** Production
-**Key Features:**
-- Horizontal scalability
-- Priority-based scheduling
-- Dead letter queue handling
-- Comprehensive monitoring dashboard
-
----
-
-### Mobile Fitness Tracker
-Cross-platform mobile application for tracking workouts, nutrition, and health metrics. Includes social features and AI-powered coaching.
-
-**Tech Stack:** React Native, Node.js, MongoDB, AWS
-**Status:** Beta Testing
-**Key Features:**
-- Workout planning and tracking
-- Nutrition logging with barcode scanning
-- Social challenges and leaderboards
-- Personalized AI coaching
-
----
-
-## Open Source Contributions
-
-- **Kubernetes** - Added support for custom resource definitions in autoscaling
-- **React** - Fixed rendering bug in concurrent mode
-- **PostgreSQL** - Performance optimization for JSON queries
-
-## Experiments & Side Projects
-
-- **Blockchain Explorer** - Web-based explorer for analyzing blockchain transactions
-- **Weather API** - RESTful API serving real-time weather data from multiple sources
-- **Terminal Emulator** - Lightweight terminal emulator written in Rust
+    <section class="projects__section">
+        <h3>Experiments & Side Projects</h3>
+        <ul>
+            {%- for exp in site.data.projects.experiments -%}
+            <li><strong>{{ exp.name }}</strong> - {{ exp.description }}</li>
+            {%- endfor -%}
+        </ul>
+    </section>
+</article>
